@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Forma de Pagamento</title>
+<title>Forma de Pagamento - TechNova Store</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,47 +13,47 @@
 <div class="logo">TechNova Store</div>
 
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="produtos.html">Produtos</a>
-
 <a href="login.html">Login</a>
-
 </nav>
 
 </header>
 
 <section class="container">
 
-<div class="card">
+<div class="card pagamento-card">
 
-<h2>Escolha a Forma de Pagamento</h2>
+<h2>💳 Escolha a Forma de Pagamento</h2>
 
 <form onsubmit="confirmarPagamento(event)">
 
-<label>
-<input type="radio" name="pagamento" value="cartao">
-Cartão de Crédito
+<label class="pagamento-opcao">
+<input type="radio" name="pagamento" value="cartao" required>
+<span>💳 Cartão de Crédito</span>
 </label>
 
-<br>
-
-<label>
+<label class="pagamento-opcao">
 <input type="radio" name="pagamento" value="pix">
-PIX
+<span>⚡ PIX</span>
 </label>
 
-<br>
-
-<label>
+<label class="pagamento-opcao">
 <input type="radio" name="pagamento" value="boleto">
-Boleto
+<span>🏦 Boleto Bancário</span>
 </label>
 
-<br><br>
+<div class="botoes-pagamento">
 
-<button type="submit">Confirmar Pagamento</button>
+<a href="produtos.html" class="btn-secundario">
+Voltar
+</a>
+
+<button type="submit">
+Confirmar Pagamento
+</button>
+
+</div>
 
 </form>
 
@@ -62,7 +62,7 @@ Boleto
 </section>
 
 <footer>
-<p>© 2026 TechNova Store</p>
+<p>© 2026 TechNova Store | Todos os direitos reservados</p>
 </footer>
 
 <script>
@@ -74,16 +74,13 @@ event.preventDefault()
 let pagamento = document.querySelector('input[name="pagamento"]:checked')
 
 if(!pagamento){
-
 alert("Escolha uma forma de pagamento!")
-
 return
-
 }
 
 alert("Pagamento realizado com sucesso!")
 
-window.location.href = "confirmação.html"
+window.location.href = "confirmacao.html"
 
 }
 

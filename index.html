@@ -18,44 +18,70 @@
     </nav>
 </header>
 
-
 <section class="hero">
-    <div class="hero-content">
-        <h1>Tecnologia que transforma seu dia</h1>
-        <p>Os melhores produtos com qualidade, performance e segurança.</p>
-        <a href="produtos.html">
-            <button>Explorar Produtos</button>
-        </a>
-    </div>
-</section>
 
+<div class="hero-content">
+
+<h1>Tecnologia que transforma seu dia</h1>
+
+<p>Os melhores produtos com qualidade, performance e segurança.</p>
+
+<button onclick="verificarLogin()" class="btn-azul">
+Explorar Produtos
+</button>
+
+</div>
+
+</section>
 
 <section class="container">
 
-    <div class="info-grid">
+<div class="info-grid">
 
-        <div class="info-card">
-            <h3>🚀 Alta Performance</h3>
-            <p>Produtos testados e aprovados para máxima eficiência.</p>
-        </div>
+<div class="info-card">
+<h3>🚀 Alta Performance</h3>
+<p>Produtos testados e aprovados para máxima eficiência.</p>
+</div>
 
-        <div class="info-card">
-            <h3>🔒 Compra Segura</h3>
-            <p>Ambiente 100% protegido para suas transações.</p>
-        </div>
+<div class="info-card">
+<h3>🔒 Compra Segura</h3>
+<p>Ambiente 100% protegido para suas transações.</p>
+</div>
 
-        <div class="info-card">
-            <h3>📦 Entrega Rápida</h3>
-            <p>Envio rápido para todo o Brasil.</p>
-        </div>
+<div class="info-card">
+<h3>📦 Entrega Rápida</h3>
+<p>Envio rápido para todo o Brasil.</p>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <footer>
-    <p>© 2026 TechNova Store | Todos os direitos reservados</p>
+<p>© 2026 TechNova Store | Todos os direitos reservados</p>
 </footer>
+
+<script>
+
+function verificarLogin(){
+
+let logado = localStorage.getItem("logado")
+
+if(logado === "true"){
+
+window.location.href = "produtos.html"
+
+}else{
+
+alert("Faça login para acessar os produtos!")
+
+window.location.href = "login.html"
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
