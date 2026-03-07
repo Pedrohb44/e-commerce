@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produtos - TechNova Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">TechNova Store</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+</nav>
+
+</header>
+
+<section class="container">
+
+<h2>Nossos Produtos</h2>
+
+<div class="produtos">
+
+<div class="produto">
+
+<img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302" width="200">
+
+<h3>Notebook Gamer</h3>
+
+<p>R$ 4.500,00</p>
+
+<button onclick="comprar('Notebook Gamer')">Comprar</button>
+
+</div>
+
+<div class="produto">
+
+<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3" width="200">
+
+<h3>Monitor 24"</h3>
+
+<p>R$ 899,00</p>
+
+<button onclick="comprar('Monitor 24')">Comprar</button>
+
+</div>
+
+<div class="produto">
+
+<img src="https://images.unsplash.com/photo-1595225476474-87563907a212" width="200">
+
+<h3>Teclado Mecânico</h3>
+
+<p>R$ 350,00</p>
+
+<button onclick="comprar('Teclado Mecânico')">Comprar</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 TechNova Store</p>
+</footer>
+
+<script>
+
+function comprar(produto){
+
+alert(produto + " adicionado ao carrinho!")
+
+window.location.href = "pagamento.html"
+
+}
+
+</script>
+
+</body>
+</html>

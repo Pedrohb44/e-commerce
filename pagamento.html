@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Forma de Pagamento</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">TechNova Store</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="produtos.html">Produtos</a>
+
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<section class="container">
+
+<div class="card">
+
+<h2>Escolha a Forma de Pagamento</h2>
+
+<form onsubmit="confirmarPagamento(event)">
+
+<label>
+<input type="radio" name="pagamento" value="cartao">
+Cartão de Crédito
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="pagamento" value="pix">
+PIX
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="pagamento" value="boleto">
+Boleto
+</label>
+
+<br><br>
+
+<button type="submit">Confirmar Pagamento</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 TechNova Store</p>
+</footer>
+
+<script>
+
+function confirmarPagamento(event){
+
+event.preventDefault()
+
+let pagamento = document.querySelector('input[name="pagamento"]:checked')
+
+if(!pagamento){
+
+alert("Escolha uma forma de pagamento!")
+
+return
+
+}
+
+alert("Pagamento realizado com sucesso!")
+
+window.location.href = "confirmação.html"
+
+}
+
+</script>
+
+</body>
+</html>
