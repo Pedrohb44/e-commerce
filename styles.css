@@ -1,4 +1,4 @@
-/* RESET */
+
 
 *{
 margin:0;
@@ -12,7 +12,7 @@ background:#f4f6f9;
 color:#333;
 }
 
-/* HEADER */
+
 
 header{
 background:#0a2540;
@@ -39,7 +39,7 @@ nav a:hover{
 text-decoration:underline;
 }
 
-/* HERO */
+
 
 .hero{
 background:linear-gradient(120deg,#1e73d8,#0a2540);
@@ -58,7 +58,7 @@ font-size:18px;
 margin-bottom:25px;
 }
 
-/* BOTÃO */
+
 
 button{
 background:#1e73d8;
@@ -75,7 +75,7 @@ button:hover{
 background:#155ab6;
 }
 
-/* CONTAINER */
+
 
 .container{
 max-width:1000px;
@@ -83,7 +83,7 @@ margin:auto;
 padding:40px 20px;
 }
 
-/* CARDS */
+
 
 .card{
 background:white;
@@ -93,7 +93,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 margin-bottom:25px;
 }
 
-/* GRID DE INFORMAÇÕES */
+
 
 .info-grid{
 display:grid;
@@ -110,7 +110,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.08);
 text-align:center;
 }
 
-/* FORM */
+
 
 form{
 display:flex;
@@ -126,7 +126,7 @@ border:1px solid #ccc;
 font-size:15px;
 }
 
-/* PRODUTOS */
+
 
 .produtos-grid{
 display:grid;
@@ -160,7 +160,7 @@ font-weight:bold;
 margin-bottom:10px;
 }
 
-/* PAGAMENTO */
+
 
 .pagamento-grid{
 display:grid;
@@ -189,7 +189,7 @@ background:#f0f6ff;
 transform:scale(1.03);
 }
 
-/* PIX */
+
 
 .pix-box{
 text-align:center;
@@ -202,7 +202,6 @@ font-weight:bold;
 color:#1e73d8;
 }
 
-/* BOLETO */
 
 .boleto-box{
 background:#f5f5f5;
@@ -218,14 +217,13 @@ font-weight:bold;
 letter-spacing:2px;
 }
 
-/* CARTÃO */
 
 .cartao-form{
 max-width:400px;
 margin:auto;
 }
 
-/* FOOTER */
+
 
 footer{
 background:#0a2540;
